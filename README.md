@@ -79,3 +79,9 @@ python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrain
 ```
 - The option `--model test` is used for generating results of CycleGAN only for one side. This option will automatically set `--dataset_mode single`, which only loads the images from one set. On the contrary, using `--model cycle_gan` requires loading and generating results in both directions, which is sometimes unnecessary. The results will be saved at `./results/`. Use `--results_dir {directory_path_to_save_result}` to specify the results directory.
 
+### Sample results (the results are not satisfactory!)
+- horse to zebra example:
+<p align="center">
+  <a target="_blank" rel="noopener noreferrer" href='imgs/FQ-CycleGAN.png'><img width="%100" height="%100" src='imgs/FQ-CycleGAN.png' style="max-width:100%;"></a>
+</p>
+
