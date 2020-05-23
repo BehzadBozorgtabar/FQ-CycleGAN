@@ -42,7 +42,7 @@ cd pytorch-CycleGAN-and-pix2pix
   - For Conda users, we provide a installation script `./scripts/conda_deps.sh`. Alternatively, you can create a new Conda environment using `conda env create -f environment.yml`.
   - For Docker users, we provide the pre-built Docker image and Dockerfile. Please refer to our [Docker](docs/docker.md) page.
 
-### CycleGAN train/test
+### FQ-CycleGAN train/test
 - Download a CycleGAN dataset (e.g. maps):
 ```bash
 bash ./datasets/download_cyclegan_dataset.sh maps
@@ -62,7 +62,7 @@ python test.py --dataroot ./datasets/maps --name maps_cyclegan --model cycle_gan
 - The test results will be saved to a html file here: `./results/maps_cyclegan/latest_test/index.html`.
 
 
-### Apply a pre-trained model (CycleGAN)
+### Apply a pre-trained model (FQ-CycleGAN)
 - You can download a pretrained model (e.g. horse2zebra) with the following script:
 ```bash
 bash ./scripts/download_cyclegan_model.sh horse2zebra
@@ -82,6 +82,6 @@ python test.py --dataroot datasets/horse2zebra/testA --name horse2zebra_pretrain
 ### Sample results (the results are not satisfactory!)
 - horse to zebra example:
 <p align="center">
-  <a target="_blank" rel="noopener noreferrer" href='imgs/FQ-CycleGAN.png'><img width="%100" height="%100" src='imgs/FQ-CycleGAN.png' style="max-width:100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href='imgs/comparison.png'><img width="%100" height="%100" src='imgs/comparison.png' style="max-width:100%;"></a>
 </p>
 
